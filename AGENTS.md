@@ -1,22 +1,29 @@
-## Development
+# AGENTS.md — portfolio · Personal profile and interactive Terminator HUD portfolio (Astro, React, Tailwind CSS)
 
-When starting the dev server, use background mode:
+Instructions for any coding agent working in this repo, in any harness. This is the project
+layer; the shared engineering core and task pipeline live in the workspace library.
+Precedence: direct user instruction > this file > the shared core.
 
-```
-astro dev --background
-```
+## Shared core
+Shared engineering core and task pipeline: `../../agents/CORE.md`, `../../agents/pipeline.md`.
 
-Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
+## Stack & tooling
+- **Astro 5+** with `@astrojs/react` and Tailwind CSS v4 (`@tailwindcss/vite`).
+- Interactive HUD elements built as lightweight React islands with `lucide-react`.
+- Facts source: verified facts and achievements from `../cv/master.md` and public GitHub repositories (`ylevytskyy`).
+- NDA compliance: use public descriptors for client projects; no confidential client names or brands.
 
-## Documentation
+## Commands
+- Install: `pnpm install`
+- Dev server (port 5101): `pnpm dev --port 5101`
+- Build (static): `pnpm build`
+- Preview: `pnpm preview`
+- Lint / verify: `pnpm build`
 
-Full documentation: https://docs.astro.build
-
-Consult these guides before working on related tasks:
-
-- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
-- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
-- [Using React, Vue, Svelte, or other framework components](https://docs.astro.build/en/guides/framework-components/)
-- [Adding or managing content](https://docs.astro.build/en/guides/content-collections/)
-- [Adding styles or using Tailwind](https://docs.astro.build/en/guides/styling/)
-- [Supporting multiple languages](https://docs.astro.build/en/guides/internationalization/)
+## Delivery
+- CI: none
+- Release: none
+- Deploy target: static site (GitHub Pages / Cloudflare Pages / Vercel)
+- Environments: local dev, production static build
+- Secrets location: none (public static site)
+- Monitoring: none

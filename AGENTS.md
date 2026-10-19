@@ -21,9 +21,9 @@ Shared engineering core and task pipeline: `../../agents/CORE.md`, `../../agents
 - Lint / verify: `pnpm build`
 
 ## Delivery
-- CI: none
-- Release: none
-- Deploy target: static site (GitHub Pages / Cloudflare Pages / Vercel)
-- Environments: local dev, production static build
+- CI: GitHub Actions (.github/workflows/deploy.yml)
+- Release: GitHub Pages auto-deploy on push to master/main
+- Deploy target: GitHub Pages (https://ylevytskyy.github.io)
+- Environments: local dev, production GitHub Pages
 - Secrets location: none (public static site)
 - Monitoring: none
